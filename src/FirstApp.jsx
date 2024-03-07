@@ -1,15 +1,15 @@
 
 const getResult = (name) => {
-  return `hola como estas ${name}`
+  return `${name}`
 }
 
-const FirstApp = () => {
+const FirstApp = ({ name, subTitle }) => {
 
   return (
     <>
       {/* <h1>{JSON.stringify(newMessages)}</h1> */}
-      {getResult('ismael')}
-      <p>soy un subtitulo</p>
+      <h1>{getResult(name)}</h1>
+      <p>{subTitle + 1}</p>
     </>
   )
 }
